@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.devtuts.helpme"
+    android:versionCode="2"
+    android:versionName="2" >
+
+    <uses-sdk  android:minSdkVersion="8"  android:targetSdkVersion="19" />
+    
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"> 	</uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"> 	</uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS">				</uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/> 
+    <uses-permission android:name="android.permission.INTERNET" />
+  	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" > 
+       
+        <activity android:name="com.devtuts.staysafe.AddGuardian"  android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.devtuts.staysafe.MainPage"     android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait">
+        <intent-filter>
+                <action android:name="android.intent.action.MAIN" /> 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>  
+        </activity>
+        <activity android:name="com.devtuts.staysafe.UserManual"  android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"></activity>
+        <receiver 
+            android:name="com.devtuts.staysafe.AppWidgett" 
+   			android:label="@string/app_name" 
+   			android:process=":remote">
+           <intent-filter>
+               	<action android:name="android.appwidget.action.APPWIDGET_UPDATE" /> 
+           </intent-filter>
+           
+           <meta-data android:name="android.appwidget.provider" android:resource="@xml/app_widget"/>
+        </receiver>
+        <service android:name="com.devtuts.staysafe.WidgetService"/>
+    </application>
+
+</manifest>

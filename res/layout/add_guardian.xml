@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayoutid"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+     android:background="#dc0202"  
+    android:orientation="vertical"
+    android1:visibility="visible"
+    tools:context=".MainPage" 
+    android:focusable="true" android:focusableInTouchMode="true">
+	<RelativeLayout
+        android:id="@+id/RelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="#e9f1f8"
+        android:padding="5dip"  >
+
+        <ImageView
+            android:id="@+id/banner"
+            android:layout_width="80dip"
+            android:layout_height="50dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="Logo2"
+            android:src="@drawable/porto" />
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="Logo"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:layout_toRightOf="@+id/ImageView01"
+            android:text="entre vizinhos"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#637fa0"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/addGuardian"
+        android:cacheColorHint="#00000000"
+        android1:layout_above="@+id/userManual"
+        android1:layout_margin="10dip"
+        android1:divider="#FFFFFF" >
+ 
+    </ListView>
+
+    <Button
+        android1:id="@+id/addGuardian"
+        android1:layout_width="200dip"
+        android1:layout_height="30dip"
+        android1:layout_alignRight="@+id/guardianNumber"
+        android1:layout_below="@+id/guardianNumber"
+        android1:background="@drawable/addguardian" />
+
+    <Button
+        android1:id="@+id/userManual"
+        android1:layout_width="150dip"
+        android1:layout_height="30dip"
+        android1:layout_alignParentBottom="true"
+        android1:layout_alignRight="@android:id/list"
+        android1:layout_marginBottom="14dp"
+        android1:background="@drawable/usermanual" />
+
+    <MultiAutoCompleteTextView
+        android1:id="@+id/guardianNumber"
+        android1:layout_width="fill_parent"
+        android1:layout_height="50dp"
+        android1:layout_alignLeft="@android:id/list"
+        android1:layout_below="@+id/RelativeLayout"
+        android1:layout_margin="10dip"
+        android1:layout_marginTop="18dp"
+        android1:background="@drawable/roundedcorner"
+        android1:ellipsize="end"
+        android1:ems="10"
+        android1:hint="Você pode adicionar familiares, vizinhos, amigos, vigias, etc..."
+        android1:padding="2dp"
+        android1:textColor="#000000" >
+ 
+    </MultiAutoCompleteTextView>
+
+</RelativeLayout>

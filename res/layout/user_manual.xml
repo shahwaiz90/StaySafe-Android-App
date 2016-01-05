@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:id="@+id/userLinearLayoutid" 
+    android:layout_height="fill_parent" 
+    android:orientation="vertical" 
+    android:background="#dc0202"  >
+
+  
+ <RelativeLayout
+        android:id="@+id/RelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="#e9f1f8"
+        android:padding="5dip"  >
+
+        <ImageView
+            android:id="@+id/banner"
+            android:layout_width="80dip"
+            android:layout_height="50dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="Logo2"
+            android:src="@drawable/porto" />
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="Logo"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:layout_toRightOf="@+id/ImageView01"
+            android:text="entre vizinhos"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#637fa0"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textColor="@android:color/white"
+        android:layout_margin="10dip"
+        android:text="INSTRUÇÕES " />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:padding="5dip" 
+        android:layout_marginRight="10dip"
+        android:layout_marginLeft="10dip"
+        android:text="1)	Escreva a mensagem que quer enviar e clique em “SALVAR”"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginLeft="10dip"
+        android:padding="5dip"
+        android:text="2)	Adicione os contatos que podem lhe ajudar em caso de emergência. Podem ser parentes, amigos, vizinhos, porteiros, etc..."
+        android:textColor="@android:color/white" />
+
+      <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginLeft="10dip"
+        android:padding="5dip"
+        android:text="3)	Clique o botão vermelho “HELP”. Seus contatos vão receber sua mensagem e o mapa de sua localização"
+        android:textColor="@android:color/white" />
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip" 
+        android:padding="10dip"
+        android:textColor="@android:color/white"
+        android:text="*Não é necessário internet para envio." />
+	 
+</LinearLayout>
