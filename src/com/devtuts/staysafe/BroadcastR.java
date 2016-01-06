@@ -90,7 +90,7 @@ public class BroadcastR extends BroadcastReceiver {
 						lon = 0;
 					}
 				} else {
-					sendData += "Wireless Network Off ";
+					sendData += "Wireless Network is Off ";
 					lat = 0;
 					lon = 0;
 				}
