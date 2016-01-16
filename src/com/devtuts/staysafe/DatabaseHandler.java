@@ -17,8 +17,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 	private static final String DATABASE_NAME 			= 	"StaySafD";
 
 	// Table names 
-	private static final String TABLE_GUARDIAN_MEMBERS  = 	"TableGuardianContacts"; 
-	private static final String TABLE_GUARDIAN_MESSAGE  = 	"TableGuardianMessage"; 
+	private static final String TABLE_GUARDIAN_MEMBERS  		= 	"TableGuardianContacts"; 
+	private static final String TABLE_GUARDIAN_MESSAGE  		= 	"TableGuardianMessage"; 
 	private static final String TABLE_HELP  			= 	"TableHelp";   
 
 	// TABLE_HELP Table Columns names
@@ -30,13 +30,13 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 	
 	// TABLE_GUARDIAN_MEMBERS Table Columns names
 	private static final String GUARDIAN_ID 			= 	"id";  
-	private static final String GUARDIAN_MEMBER_NUMBER  = 	"number";
-	private static final String GUARDIAN_MEMBER_NAME    = 	"username"; 
+	private static final String GUARDIAN_MEMBER_NUMBER  		= 	"number";
+	private static final String GUARDIAN_MEMBER_NAME    		= 	"username"; 
 	
 	
 	// TABLE_GUARDIAN_MESSAGE Table Columns names
-	private static final String GUARDIAN_MSG_ID 		= 	"id";  
-	private static final String GUARDIAN_MEMBER_MSG  	= 	"message"; 
+	private static final String GUARDIAN_MSG_ID 			= 	"id";  
+	private static final String GUARDIAN_MEMBER_MSG  		= 	"message"; 
 	
 	public DatabaseHandler(Context context) {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);
